@@ -1,9 +1,17 @@
 import UIKit
 
 
+class Person{
+    var name = "";
+    
+    init(_ name:String){
+        // custom init code
+        self.name = name
+    }
+}
 
-class Employee{
-    var name = ""
+class Employee:Person {
+    
     var salary = 0
     var role = ""
     
@@ -12,16 +20,12 @@ class Employee{
         salary+=100
     }
     
-    
+    override init(_ name:String){
+        super.init(name)
+        self.role = "Analyst"
+    }
 }
 
-//let employee:Employee = Employee()
-//employee.name = "Sumit"
-//employee.salary = 35000
-//employee.role = "Full Stack Developer"
-//
-//employee.doWork()
-//print(employee.name,employee.salary,employee.role)
 
 
 
@@ -44,24 +48,17 @@ class Manager:Employee {
     
 }
 
-var m:Manager = Manager()
-m.name = "Joseph"
-m.salary = 85000
-m.doWork()
-m.teamSize = 5
 
-print(m.name)
-print(m.salary)
-print(m.role)
-m.firePeople()
+let p:Person = Person("Sumit")
 
-var e:Employee = Employee()
+print(p.name)
+let e = Employee("Preeti")
+e.salary = 45000
 
-e.name = "Sumit"
-e.salary = 35000
-e.role = "Full Stack Developer"
-e.doWork()
-print(e.name,e.salary,e.role)
+print(e.name,e.role)
+
+
+
 
 
 
