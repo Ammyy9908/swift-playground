@@ -1,3 +1,5 @@
+import UIKit
+
 // Strings
 var message = "Hello World"
 
