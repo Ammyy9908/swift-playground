@@ -20,6 +20,24 @@
 
 
 ```
-var name = "John
-print(name) // John
+import UIKit
+
+
+
+// in swift we can declare variables using var and let keywords:
+// var - variable
+
+var name = "John"
+var age = 30
+
+// let - constant
+let city = "London"
+let country = "UK"
+
+// we can also declare variables using type inference:
+// var - variable
+var name_two:String = "John"
+// let - constant
+let city_name:String = "London"
+let country_name:String = "UK"
 ```
