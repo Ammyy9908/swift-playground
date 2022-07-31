@@ -15,3 +15,11 @@
 <li>1.var=>A variables whicg can be mutable in the sense we can modify their value.</li>
 <li>2.let=>A variables which cannot be modified after initialization.</li>
 </ul>
+
+### Examples
+
+
+```
+var name = "John
+print(name) // John
+```
